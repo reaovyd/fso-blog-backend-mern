@@ -11,9 +11,4 @@ sudo pacman -S npm
 
 After `npm` is installed, backend for this blog is then hosted on `https://localhost:3001/api/blogs` (the PORT can be changed by your own `.env` file; ensure `dotenv` is installed by `npm install dotenv` see `package.json` for all required packages)
 
-
-a
--
--
-
-
+Simply run `npm run start` to begin backend server on `https://localhost:3001/api/blogs`.

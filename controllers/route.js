@@ -14,7 +14,7 @@ routerHandler.get("/:id", (req, res, next) => {
 		if(blog) {
 			res.json(blog)
 		} else {
-			next(err)
+			next(blog)
 		}
 	}).catch(err => next(err))
 })

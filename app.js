@@ -11,7 +11,7 @@ const config = require("./utils/config")
 logger.info("Connecting to MongoDB")
 
 mongoose.connect(config.MONGODB_URI).then(res => {
-	logger.info("Connected to MongoDB!")
+	logger.info("Connected to MongoDB!", res.connections[0]["name"])
 }).catch(err => {
 	logger.error("Error connecting to MongoDB! ERR_MSG: ", err.message)
 })
